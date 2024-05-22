@@ -46,7 +46,7 @@ body{
     margin:0;
     padding: 0;
     color:white;
-    font-size:24px;
+    font-size:28px;
 }
 
 .sidebar{
@@ -91,9 +91,13 @@ body{
     font-size: 48px;
   }
 
+  .section-one a{
+    text-decoration: none;
+  }
+
   .section-one-text{
     margin-bottom: 15px;
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .section-one-text-container{
@@ -109,7 +113,7 @@ body{
   }
 
   .section-one-button{
-    background-color: #3882f6;
+    background-color: #1c4485;
     color: white;
     border-radius: 5px;
     border-style: none;
@@ -135,7 +139,7 @@ body{
   .section-two{
     text-align: center;
     padding: 20px;
-    background: linear-gradient(to top, #1F2937, #ffffff);
+    background: linear-gradient(to bottom, #1F2937, #ffffff);
     position: relative;
   }
 
@@ -147,7 +151,7 @@ body{
     background-repeat: no-repeat; 
     position:absolute;
     inset: 0;
-    opacity: 0.6;
+    opacity: 0.5;
   }
 
   .section-two h2{
@@ -185,7 +189,6 @@ body{
     max-width: 200px;
     text-wrap: wrap;
     font-size: 24px; 
-    font-weight: bold;
   }
 
   .section-two h2, .section-two-image-container{
@@ -223,14 +226,27 @@ body{
     display:flex;
     justify-content: center;
     align-items: center;
-    margin: 50px; 
+    padding: 50px 0px;
+    position: relative;
+    background: linear-gradient(to top, #1F2937, #ffffff);
+  }
+
+  .section-four::before{
+    content: '';
+    background-image: url('images/sky-empty.jpg');
+    background-size:cover; 
+    background-position:bottom;
+    background-repeat: no-repeat; 
+    position:absolute;
+    inset: 0;
+    opacity: 0.5;
   }
 
   .section-four-container{
     display: flex;
     flex-direction: column;
     background-color: #3882f6;
-    border-radius: 5px;
+    border-radius: 8px;
     color:white;
     padding: 30px 100px;
   }
@@ -252,24 +268,29 @@ body{
   }
 
   .section-four-button{
+    width: 100px;
     background-color: transparent;
     color:white;
-    border: 2px solid rgb(255, 255, 255);
-    border-radius: 8px;
-    padding: 5px 15px;
     font-size: 14px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 5px 25px;
+    margin-left: 20px;
     font-weight: bold;
     cursor:pointer;
-    align-self: flex-end;
-    width:100px;
+    text-decoration: none;
   }
 
   .footer{
     display:flex;
     justify-content: center;
-    background-color: #1F2937;
+    background-color: #102543;;
     color: white;
     padding: 30px 0; 
+  }
+
+  .section-four-container{
+    isolation: isolate;
   }
 
 .header, .section-one-text-container h1, .section-one-button, .section-two h2, .section-three-quoter, .section-four-title, .section-four-button, .footer{
