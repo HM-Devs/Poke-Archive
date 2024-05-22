@@ -7,12 +7,12 @@
 
 @font-face {
   font-family: 'emerald';
-  src: url('public/fonts/pokemon-emerald-pro.ttf') format('truetype');
+  src: url('./fonts/pokemon-emerald-pro.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'pkmnems';
-  src: url('public/fonts/pkmnems.ttf') format('truetype');
+  src: url('./fonts/pkmnems.ttf') format('truetype');
 }
 
 body{
